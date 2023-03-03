@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-imagen = cv2.imread('lunares.png')
+imagen = cv2.imread('cartas.jpg')
 grises = cv2.cvtColor(imagen, cv2.COLOR_BGR2GRAY)
 grises = cv2.bitwise_not(grises)
 bordes = cv2.Canny(grises, 1, 150)
