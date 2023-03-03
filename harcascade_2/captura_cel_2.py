@@ -8,7 +8,8 @@ if not os.path.exists(Datos):
 	print('Carpeta creada: ', Datos)
 	os.makedirs(Datos)
 
-cap = cv2.VideoCapture("http://192.168.0.10:8080/video")
+#cap = cv2.VideoCapture("ip_de_ip_webcam/video")
+cap = cv2.VideoCapture(0)
 
 x1, y1 =100, 80
 x2, y2 = 800, 800
